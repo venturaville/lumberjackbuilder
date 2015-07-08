@@ -30,5 +30,5 @@ RUN PATH=$GOPATH/bin:$PATH
 RUN bundle exec make
 RUN bundle exec make deb
 
-CMD cp /app/src/logstash-forwarder-${LUMBERJACK_VERSION}/logstash-forwarder_${LUMBERJACK_VERSION}_amd64.deb /pkg/logstash-forwarder-${LUMBERJACK_VERSION}/logstash-forwarder_${LUMBERJACK_VERSION}-${LUMBERJACK_BUILD_VERSION}_amd64.deb
+CMD cp /app/src/logstash-forwarder-${LUMBERJACK_VERSION}/logstash-forwarder_${LUMBERJACK_VERSION}_amd64.deb /pkg/logstash-forwarder_${LUMBERJACK_VERSION}-${LUMBERJACK_BUILD_VERSION}_amd64.deb
 
